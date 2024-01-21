@@ -252,18 +252,22 @@ button {
 }
 
 .portfolio-cards {
-    display: grid !important;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    flex-direction: column;
 }
 
 .portfolio-card {
     color: var(--main-text-color);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    text-align: center;
     gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-card:nth-child(2) {
+    flex-direction: row-reverse;
 }
 
 .portfolio-card img {
@@ -281,6 +285,7 @@ button {
     .portfolio-card {
         gap: 10px;
         margin-bottom: 15px;
+        flex-direction: column !important;
     }
     .portfolio-card img {
         width: 100%;

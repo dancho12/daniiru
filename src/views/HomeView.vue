@@ -14,13 +14,13 @@
         <button type="button">{{ $t('profile.contact') }}</button>
 
         <div class="social-links">
-          <a href="#">
+          <a href="https://www.instagram.com/daniirukov/" target="_blank">
             <SVGIcon :name="'inst'" :size="25" />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/daniiru" target="_blank">
             <SVGIcon :name="'in'" :size="25" />
           </a>
-          <a href="#">
+          <a href="https://t.me/daniirukov" target="_blank">
             <SVGIcon :name="'telegram'" :size="25" />
           </a>
         </div>
@@ -108,12 +108,33 @@
     <div class="content-card v-flex padding-m">
       <h1>{{ $t('titles.portfolio') }}</h1>
       <div class="h-flex-xl portfolio-cards">
-        <a href="https://jardic-neo.ru" target="_blank" class="portfolio-card v-flex"><img src="@/assets/pics/jardic.png"
-            alt="jardic"><span>Jardic-neo.ru</span></a>
-        <a href="https://github.com/dancho12" target="_blank" class="portfolio-card v-flex"><img
-            src="@/assets/pics/GitHub.png" alt="github"><span>Git Hub</span></a>
-        <a href="https://acrnm.ru/" target="_blank" class="portfolio-card v-flex"><img src="@/assets/pics/og-image.png"
-            alt="acrnm"><span>acrnm.ru</span></a>
+        <div class="portfolio-card v-flex">
+          <a href="https://beta.jardic-neo.ru" target="_blank"><img src="@/assets/pics/jardic.png" alt="jardic"></a>
+          <div>
+            <a href="https://beta.jardic-neo.ru" target="_blank">Jardic-neo.ru</a>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium.</p>
+          </div>
+        </div>
+        <div class="portfolio-card v-flex">
+          <a href="https://acrnm.ru/" target="_blank"><img src="@/assets/pics/og-image.png" alt="acrnm"></a>
+          <div>
+            <a href="https://acrnm.ru/" target="_blank">acrnm.ru</a>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium.</p>
+          </div>
+        </div>
+        <div class="portfolio-card v-flex">
+          <a href="https://github.com/dancho12" target="_blank"><img src="@/assets/pics/GitHub.png" alt="github"></a>
+          <div>
+            <a href="https://github.com/dancho12" target="_blank">Git Hub</a>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+              ultricies nec, pellentesque eu, pretium.</p>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
