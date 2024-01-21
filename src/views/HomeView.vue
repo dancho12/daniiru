@@ -112,18 +112,14 @@
           <a href="https://beta.jardic-neo.ru" target="_blank"><img src="@/assets/pics/jardic.png" alt="jardic"></a>
           <div>
             <a href="https://beta.jardic-neo.ru" target="_blank">Jardic-neo.ru</a>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium.</p>
+            <p v-html="$t('portfolio.jardic')"></p>
           </div>
         </div>
         <div class="portfolio-card v-flex">
           <a href="https://acrnm.ru/" target="_blank"><img src="@/assets/pics/og-image.png" alt="acrnm"></a>
           <div>
             <a href="https://acrnm.ru/" target="_blank">acrnm.ru</a>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium.</p>
+            <p v-html="$t('portfolio.acrnm')"></p>
           </div>
         </div>
         <div class="portfolio-card v-flex">

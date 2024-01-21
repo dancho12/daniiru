@@ -35,5 +35,9 @@ export default {
             en: "English - middle level",
             ru: "Russian - native"
         },
+    },
+    portfolio: {
+        jardic: "The Russian-Japanese web dictionary is a mirror of the original jardic.ru dictionary. The main task of the site is to adapt, first of all, the visuals and interaction for modern devices.<br>Written in vue3 + js, due to which the reactivity of the site is achieved.Hosting is also carried out on Google firebase hosting, as a result of which the site loads quickly from anywhere in the world.<br>Note: the original author has no objections and has authorized the creation of the mirror.",
+        acrnm: "Business card website for a sound design studio. Written in vue3+js.<br> Hosted by Google firebase hosting."
     }
 }
