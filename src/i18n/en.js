@@ -6,10 +6,10 @@ export default {
     },
     profile: {
         aboutMe: "About me",
-        aboutMeText: "I am a web engineer with experience in creating websites since 2020. My professional journey in web development is accompanied by extensive expertise, and I am actively engaged in this field. Since 2022, I have gained experience living and working in Japan, enhancing my career with new perspectives and international exposure.",
+        aboutMeText: "I am a web engineer with experience in creating websites since 2020. My professional journey in web development is accompanied by extensive expertise, and I am actively engaged in this field.<br><br>Since 2022, I have gained experience living and working in Japan, enhancing my career with new perspectives and international exposure.",
         name: "Daniil Kovalev",
         occupation: "WEB-engineer",
-        contact: "Contact"
+        contact: "Contact me"
     },
     resume: {
         workExperience: {

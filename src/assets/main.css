@@ -1,19 +1,19 @@
 @import './base.css';
 body {
-    font-family: 'Noto Sans', 'Noto Sans JP';
+    font-family: 'Noto Sans JP', 'Noto Sans';
     margin: 0px;
     color: var(--main-text-color);
     background-color: var(--background-color);
 }
 
 h2 {
-    font-size: 42px;
     font-weight: 700;
+    font-size: 37px;
 }
 
 h3 {
-    font-size: 24px;
     font-weight: 700;
+    font-size: 29px;
 }
 
 a {
@@ -25,6 +25,11 @@ main {
     margin: 0 auto;
 }
 
+p {
+    font-weight: 400;
+    font-size: 19px;
+}
+
 @media (max-width: 768px) {
     main {
         width: auto;
@@ -33,9 +38,10 @@ main {
 
 .content-card {
     width: 100%;
-    min-height: 630px;
+    /* min-height: 630px; */
     display: flex;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .half-content {
@@ -58,6 +64,17 @@ main {
     .h-flex-m {
         display: flex;
         flex-direction: row;
+    }
+    h2 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    h3 {
+        font-size: 22px;
+        margin-top: 0px;
+    }
+    p {
+        font-size: 16px;
     }
 }
 
@@ -101,23 +118,23 @@ main {
 
 .langs {
     padding-top: 10px;
-    font-size: 18px;
     font-weight: 700;
+    font-size: 14px;
     gap: 15px;
     position: absolute;
-    right: 0;
+    right: 15px;
 }
 
 @media (max-width: 768px) {
     .langs {
-        position: unset;
+        /* position: unset; */
         right: unset;
         width: calc(100% - 60px);
         margin-left: auto;
         margin-right: auto;
-        background-color: var(--secondary-color);
         padding: 30px 30px 0px 30px;
         justify-content: center;
+        font-size: 18px;
     }
 }
 
@@ -126,10 +143,12 @@ main {
 }
 
 .profile {
-    padding: 50px;
-    text-align: center;
-    background-color: var(--secondary-color);
-    display: block;
+    padding: 80px;
+    /* background-color: var(--secondary-color); */
+    display: flex;
+    gap: 40px;
+    border-radius: 0px 0px 20px 20px;
+    background: var(--back-profile);
 }
 
 .profile span {
@@ -137,19 +156,21 @@ main {
 }
 
 .profile .name {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 0.7;
 }
 
 .profile .occupation {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 27px;
+    color: var(--gray);
+    margin-top: 10px;
 }
 
 .profile .avatar {
-    height: 260px;
-    width: 260px;
+    height: 365px;
+    width: 365px;
     background-image: url(@/assets/pics/avatar.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -158,20 +179,17 @@ main {
     margin-right: auto;
     background-size: 160%;
     margin-bottom: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
 }
 
-.profile .social-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    width: min-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+.profile h2 {
+    /* margin-bottom: 7px; */
 }
 
-.profile .social-links img {
-    height: 25px;
+.profile p {
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 button {
@@ -187,8 +205,8 @@ button {
     border: none;
 }
 
-.profile-info {
-    padding: 30px;
+.profile-info-mob {
+    display: none;
 }
 
 .profile-info .links {
@@ -199,47 +217,72 @@ button {
 
 .resume-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 45px;
 }
 
 @media (max-width: 768px) {
     .profile,
     .profile-info {
-        padding: 30px;
+        padding: 75px 30px 30px 30px;
+        flex-direction: column;
+        gap: 0px;
     }
-    .profile-info .links {
-        margin-bottom: 0px;
+    .profile-info {
+        padding: 0px;
+        text-align: center;
     }
-    .resume-cards {
-        display: grid;
-        grid-template-columns: 1fr;
+    .profile-info h2,
+    .profile-info p {
+        display: none;
     }
     .padding-m {
         padding: 30px;
     }
+    .profile .avatar {
+        width: calc(100vw - 60px);
+        height: calc(100vw - 60px);
+    }
+    .profile .name {
+        font-size: 37px;
+    }
+    .ja .profile .name {
+        font-size: 30px !important;
+    }
+    .profile .occupation {
+        font-size: 20px;
+    }
+    .profile-info-mob {
+        display: unset;
+        padding: 30px 30px 0px 30px;
+    }
 }
 
 .resume-card {
-    font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 23px;
 }
 
 .skills-elem {
-    gap: 15px;
-    font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
+    /* font-size: 23px; */
     flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 5px;
 }
 
 .langs-elem {
-    gap: 15px;
-    font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
+    /* font-size: 23px; */
+    column-gap: 15px;
+    row-gap: 5px;
 }
 
 .year-elem {
     gap: 15px;
     align-items: center;
+    font-weight: 500;
+    /* font-size: 23px; */
 }
 
 .year-elem img {
@@ -247,12 +290,13 @@ button {
 }
 
 .year-elem .occupation {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 400;
+    color: var(--gray);
 }
 
 .portfolio-cards {
-    gap: 30px;
+    gap: 50px;
     flex-direction: column;
 }
 
@@ -261,20 +305,41 @@ button {
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
-    gap: 20px;
+    gap: 40px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .portfolio-card:nth-child(2) {
     flex-direction: row-reverse;
 }
 
-.portfolio-card img {
-    width: auto;
+.portfolio-card .img img {
+    width: -webkit-fill-available;
     height: 270px;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.portfolio-card .info {
+    width: 50%;
+    font-size: 22px;
+}
+
+.portfolio-card .info a {
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.portfolio-card .info p {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.portfolio-card .img {
+    width: 50%;
 }
 
 @media (max-width: 768px) {
@@ -287,15 +352,77 @@ button {
         margin-bottom: 15px;
         flex-direction: column !important;
     }
-    .portfolio-card img {
-        width: 100%;
-        height: 190px;
+    .portfolio-card .img,
+    .portfolio-card .info {
+        width: unset;
     }
+    .portfolio-card .info {
+        font-size: 20px;
+    }
+    .portfolio-card .img img {
+        width: 100%;
+        height: 155px;
+    }
+    .resume-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .resume-card {
+        font-size: 16px;
+    }
+    .year-elem .occupation {
+        font-size: 12px;
+    }
+    .resume-cards .icon-svg {
+        min-width: 20px !important;
+        max-width: 20px !important;
+        min-height: 20px !important;
+        max-height: 20px !important;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.social-links img {
+    height: 25px;
 }
 
 footer {
     margin-top: 30px;
     height: 200px;
     width: auto;
-    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 0px 0px;
+    background: var(--back-footer);
+    padding-top: 40px;
+}
+
+footer span {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+footer .container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }

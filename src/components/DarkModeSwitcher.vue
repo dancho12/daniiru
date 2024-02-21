@@ -49,11 +49,19 @@ export default defineComponent({
         document.documentElement.style.setProperty('--main-color', '#2e2e2e')
         document.documentElement.style.setProperty('--background-color', '#ffffff')
         document.documentElement.style.setProperty('--secondary-color', '#f4f4f4')
+        document.documentElement.style.setProperty('--gray', '#565656')
+        document.documentElement.style.setProperty('--resume-icons', '#565656')
+        document.documentElement.style.setProperty('--back-profile', '#f4f4f4')
+        document.documentElement.style.setProperty('--back-footer', '#f4f4f4')
       } else {
         document.documentElement.style.setProperty('--main-text-color', '#ffffff')
         document.documentElement.style.setProperty('--main-color', '#373737')
         document.documentElement.style.setProperty('--background-color', '#191919')
         document.documentElement.style.setProperty('--secondary-color', '#1f1f1f')
+        document.documentElement.style.setProperty('--gray', '#c5c5c5')
+        document.documentElement.style.setProperty('--resume-icons', '#ffffff')
+        document.documentElement.style.setProperty('--back-profile', 'radial-gradient(142.91% 87.28% at 75.86% 16.64%, rgb(38, 38, 38) 0%, rgb(31, 31, 31) 100%)')
+        document.documentElement.style.setProperty('--back-footer', 'linear-gradient(360deg, #1f1f1f 0%, #222 100%)')
       }
     }
 
