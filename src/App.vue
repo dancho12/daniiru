@@ -28,6 +28,8 @@ export default defineComponent({
   setup() {
 
 
+    document.querySelector('html').setAttribute('lang', i18n.global.locale.value)
+
     // const { t } = useI18n()
 
     // function change_locale() {

@@ -320,6 +320,7 @@ button {
     height: 270px;
     object-fit: cover;
     border-radius: 20px;
+    background: var(--back-pic);
 }
 
 .portfolio-card .info {

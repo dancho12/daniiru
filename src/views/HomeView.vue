@@ -100,7 +100,7 @@
       <h2>{{ $t('titles.portfolio') }}</h2>
       <div class="h-flex-xl portfolio-cards">
         <div class="portfolio-card v-flex">
-          <a href="https://beta.jardic-neo.ru" target="_blank" class="img"><img src="@/assets/pics/jardic.png"
+          <a href="https://beta.jardic-neo.ru" target="_blank" class="img"><img src="@/assets/pics/jardic_n.png"
               alt="jardic"></a>
           <div class="info">
             <a href="https://beta.jardic-neo.ru" target="_blank">jardic-neo.ru</a>
@@ -115,11 +115,11 @@
           </div>
         </div>
         <div class="portfolio-card v-flex">
-          <a href="https://github.com/dancho12" target="_blank" class="img"><img src="@/assets/pics/GitHub.png"
+          <a href="https://github.com/dancho12" target="_blank" class="img"><img src="@/assets/pics/GitHub_n.png"
               alt="github"></a>
           <div class="info">
-            <a href="https://github.com/dancho12" target="_blank">Git Hub</a>
-            <p></p>
+            <!-- <a href="https://github.com/dancho12" target="_blank">Git Hub</a>
+            <p></p> -->
           </div>
         </div>
       </div>
@@ -163,6 +163,7 @@ export default defineComponent({
       i18n.global.locale.value = locale
 
       lang.value = locale;
+      document.querySelector('html').setAttribute('lang', i18n.global.locale.value)
 
     }
     return { change_locale, lang }
